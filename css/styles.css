@@ -265,7 +265,37 @@ only screen and (                min-resolution: 2dppx) {
 
 }
 
+@media only screen and (min-width: 700px) {
+  .site-footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .site-footer__container {
+    flex-direction: row;
+  }
 
+  .site-footer__logo {
+    margin-bottom: 0;
+    margin-right: 48px;
+  }
+
+  .site-footer__sitenav {
+    flex-grow: 1;
+    margin-right: 48px;
+    margin-bottom: 0;
+  }
+
+  .sitenav__list--site-footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .sitenav__list--site-footer .sitenav__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 42px;
+  }
+
+}
 
 @media only screen and (min-width: 768px) {
   .container {
