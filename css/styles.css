@@ -208,7 +208,45 @@ select:-webkit-autofill:focus {
 }
 
 
+/* FOOTER */
+.site-footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-color: var(--grayish-dark-blue);
+}
+.site-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.site-footer__logo {
+  margin-bottom: 40px;
+}
+
+.site-footer__sitenav {
+  margin-bottom: 40px;
+}
+
+/* SOCIALS */
+.socials__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.socials__item:not(:last-child) {
+  margin-right: 16px;
+}
+.socials__link {
+  display: block;
+  color: #fff;
+}
+
+.socials__icon {
+  display: block;
+}
 
 
 
