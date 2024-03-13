@@ -150,6 +150,34 @@ select:-webkit-autofill:focus {
   text-transform: uppercase;
 }
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 16px 32px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  border: 1px solid var(--grayish-dark-blue);
+  color: var(--grayish-dark-blue);
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: var(--grayish-dark-blue);
+}
+.button:active {
+  opacity: 0.6;
+}
+
+.button:disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 /* LOGO */
 .logo {
   display: block;
