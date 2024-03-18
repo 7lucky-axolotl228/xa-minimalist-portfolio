@@ -373,6 +373,12 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
 }
+@media only screen and (min-width: 500px) {
+  .hero__img {
+    height: 600px;
+    object-position: center;
+  }
+}
 
 @media only screen and (min-width: 700px) {
   .site-footer {
@@ -413,7 +419,7 @@ only screen and (                min-resolution: 2dppx) {
   }
 
   .site-header {
-    padding-top: 57px;
+    padding-top: 50px;
     padding-bottom: 47px;
   }
 
@@ -452,8 +458,37 @@ only screen and (                min-resolution: 2dppx) {
   .site-header__toggler {
     display: none;
   }
+
+  .hero__container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero__img {
+    margin-bottom: 0;
+  }
+
+  .hero__text-wrapper {
+    position: absolute;
+    z-index: 1;
+    left: 40px;
+    bottom: 0;
+    width: 514px;
+    padding-top: 56px;
+    padding-right: 56px;
+    background-color: #fff;
+  }
+
+  .hero__heading {
+    margin-bottom: 48px;
+  }
 }
 
+@media only screen and (min-width:1024px) {
+  .hero {
+    margin-bottom: 150px;
+  }
+}
 
 @media only screen and (min-width:1180px) {
   .site-header {
